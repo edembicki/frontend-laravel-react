@@ -1,15 +1,16 @@
 # Projeto criado com Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Create React App](https://github.com/facebook/create-react-app).
 
 # Tecnologias utilizadas
-PHP 8.2+
-MySQL 8+
-Laravel 8
-ReactJS 17.0.2
-Axios 1.6.2
-draft-js 0.11.7
-react-draft-wysiwyg 1.13.7
+PHP 8.2+ \
+MySQL 8+ \
+Laravel 8 \
+ReactJS 17.0.2 \
+react-bootstrap 2.9.1 \
+Axios 1.6.2 \
+draft-js 0.11.7 \
+react-draft-wysiwyg 1.13.7 \
 
 ## Inicialização Backend
 
