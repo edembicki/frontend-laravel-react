@@ -10,7 +10,7 @@ ReactJS 17.0.2 \
 react-bootstrap 2.9.1 \
 Axios 1.6.2 \
 draft-js 0.11.7 \
-react-draft-wysiwyg 1.13.7 \
+react-draft-wysiwyg 1.13.7
 
 ## Inicialização Backend
 
