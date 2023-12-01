@@ -1,3 +1,4 @@
+//Converte a data do formato ISO-8601 para o formato apresentado no post
 export const dateFormatConverter = (date: string) => {
   const dateFormatted = date.split("T")[0]
   const timeFormatted = date.split("T")[1]

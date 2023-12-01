@@ -32,8 +32,10 @@ interface Feed {
 }
 
 const FeedsComponent: React.FC<Props> = ({ feedData }) => {
+  //Redux utilizado para o gerenciamento do state
   const [state, dispatch] = useReducer(FeedsReducer, initialState)
 
+  //Carregamento dos dados iniciais do state
   const {
     currentFeedData,
     textIsLimited,
@@ -43,6 +45,7 @@ const FeedsComponent: React.FC<Props> = ({ feedData }) => {
     feedFormType
   } = state
 
+  //Valida se o tamanho do texto excede 500 caracteres
   const handleTextSize = () => {
     dispatch(setFeedTextIsLimited(!textIsLimited))    
   }
@@ -54,12 +57,16 @@ const FeedsComponent: React.FC<Props> = ({ feedData }) => {
     return false
   }
 
+  //Funcao para gerenciar o state da modal - Mostra
   const handleModalShow = () => {
     dispatch(setFeedModalShow(true))
   }
+  //Funcao para gerenciar o state da modal - Ocultar
   const handleModalHide = () => {
     dispatch(setFeedModalShow(false))
   }
+
+  //Funcao chamada para criar post
   const handleModalCreateFeed = () => {
     if(feedFormAuthor){
       axios
@@ -75,6 +82,7 @@ const FeedsComponent: React.FC<Props> = ({ feedData }) => {
     }
   }
 
+  //Funcao chamada para atualizar post
   const handleModalUpdateFeed = (currentFeedData: { id: string }) => {
     if(feedFormAuthor){
       axios
@@ -90,12 +98,14 @@ const FeedsComponent: React.FC<Props> = ({ feedData }) => {
     }
   }
 
+  //Funcao para atribuir os dados do post selecionado para dentro da modal
   const handleModalEdit = (currentFeed: Feed) => {
     dispatch(setFeedModalShow(true))
     dispatch(setCurrentFeedData(currentFeed))
   }
-  const handleModalDelete = async (currentFeed: Feed) => {
 
+  //Funcao chamada para deletar um post
+  const handleModalDelete = async (currentFeed: Feed) => {
     const userConfirmed = window.confirm('Você tem certeza?');
     if (userConfirmed) {
       axios

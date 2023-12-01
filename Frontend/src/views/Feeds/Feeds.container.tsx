@@ -10,6 +10,7 @@ const FeedsContainer: React.FC = () => {
 
   const [feeds, setFeeds] = React.useState([]);
 
+  //Hook utilizado para o carregamento dos feed
   useEffect(() => {
     axios.get(baseFeedsURL).then((response) => {
       setFeeds(response.data);
