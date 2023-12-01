@@ -1,0 +1,11 @@
+
+#dropdown-basic {
+  border: none;
+  background-color: transparent;
+}
+.dropdown-item {
+  display: flex !important;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}

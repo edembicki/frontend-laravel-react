@@ -1,0 +1,11 @@
+@import './../../assets/styles/global';
+
+.RichText__Editor {
+  border: 1px solid $theme-border-color;
+  border-radius: 10px;
+}
+
+.public-DraftEditorPlaceholder-root,
+.DraftEditor-editorContainer {
+  padding-left: $spacing-1;
+}

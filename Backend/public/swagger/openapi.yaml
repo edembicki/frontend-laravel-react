@@ -1,0 +1,14 @@
+openapi: 3.0.0
+info:
+  title: 'My First API'
+  version: '0.1'
+paths:
+  /index:
+    get:
+      description: 'Return a Course´s name'
+      operationId: a377995e35d439f9e42c0430ba0c706f
+      responses:
+        '200':
+          description: OK
+        '422':
+          description: 'Missing Data'

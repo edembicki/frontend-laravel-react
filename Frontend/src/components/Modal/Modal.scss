@@ -1,0 +1,13 @@
+@import './../../assets/styles/global';
+
+.modal-title {
+  width: 100%;
+}
+.Modal__CloseButton,
+.Modal__CloseButton:hover {
+  border: none !important;
+  background: transparent !important;
+  color: $theme-text-color-secondary !important;
+  float: right !important;
+  font-weight: 500 !important;
+}

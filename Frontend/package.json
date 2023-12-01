@@ -1,0 +1,67 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^29.5.10",
+    "@types/node": "^20.10.1",
+    "@types/react": "^18.2.39",
+    "@types/react-dom": "^18.2.17",
+    "axios": "^1.6.2",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^5.3.2",
+    "draft-convert": "^2.1.13",
+    "draft-js": "^0.11.7",
+    "react": "^16.11.0",
+    "react-bootstrap": "^2.9.1",
+    "react-bootstrap-confirmation": "^1.0.4",
+    "react-dom": "^17.0.2",
+    "react-draft-wysiwyg": "^1.15.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.69.5",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/draft-convert": "^2.1.8",
+    "@types/draft-js": "^0.11.16",
+    "@types/react-bootstrap-confirmation": "^1.0.3",
+    "@types/react-draft-wysiwyg": "^1.13.7",
+    "@webpack-cli/generators": "^3.0.7",
+    "html-webpack-plugin": "^5.5.3",
+    "prettier": "^3.1.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "workbox-webpack-plugin": "^7.0.0"
+  }
+}
